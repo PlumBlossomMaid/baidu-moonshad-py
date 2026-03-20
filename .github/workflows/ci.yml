@@ -6,7 +6,7 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
-  workflow_dispatch:  # allow called manually
+  workflow_dispatch:
 
 jobs:
   lint:
@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pycryptodome pytest parameterized
+          pip install ruff   # ← 安装 ruff
 
       - name: Run ruff linter
         run: ruff check --output-format=github .
@@ -50,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pycryptodome pytest
+          pip install pycryptodome pytest parameterized
 
       - name: Run tests
         run: |
@@ -69,7 +69,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pycryptodome pytest pytest-cov
+          pip install pycryptodome pytest pytest-cov parameterized
 
       - name: Run tests with coverage
         run: |
