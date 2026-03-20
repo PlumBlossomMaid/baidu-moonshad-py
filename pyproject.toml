@@ -98,3 +98,7 @@ test = [
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["moonshad*"]
+exclude = ["test_*"]
