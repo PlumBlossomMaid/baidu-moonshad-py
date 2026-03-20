@@ -19,8 +19,7 @@ Example:
     >>> print(result['shaOne'])
 """
 
-# 使用相对导入（在包内部）
-from .moonshad import MoonshadSigner, generate_sign_for_login
+from moonshad.moonshad import MoonshadSigner, generate_sign_for_login
 
 __all__ = ["MoonshadSigner", "generate_sign_for_login"]
 __version__ = "1.0.0"
