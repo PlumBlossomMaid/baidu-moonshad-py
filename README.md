@@ -21,12 +21,6 @@ Baidu AI Studio / Baidu Login Signature Generator.
 ## Installation
 
 ```bash
-pip install baidu-moonshad-py
-```
-
-Or install directly from GitHub:
-
-```bash
 pip install git+https://github.com/PlumBlossomMaid/baidu-moonshad-py.git
 ```
 

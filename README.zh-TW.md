@@ -21,12 +21,6 @@
 ## 安裝
 
 ```bash
-pip install baidu-moonshad-py
-```
-
-或直接從 GitHub 安裝：
-
-```bash
 pip install git+https://github.com/PlumBlossomMaid/baidu-moonshad-py.git
 ```
 
