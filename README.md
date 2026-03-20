@@ -1,7 +1,7 @@
 # baidu-moonshad-py
 
 [![CI](https://github.com/PlumBlossomMaid/baidu-moonshad-py/actions/workflows/ci.yml/badge.svg)](https://github.com/PlumBlossomMaid/baidu-moonshad-py/actions/workflows/ci.yml)
-[![License](https://img.shields.io/github/license/PlumBlossomMaid/baidu-moonshad-py.svg)](https://github.com/PlumBlossomMaid/baidu-moonshad-py/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/PlumBlossomMaid/baidu-moonshad-py.svg)](https://github.com/PlumBlossomMaid/baidu-moonshad-py/blob/master/LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 Baidu AI Studio / Baidu Login Signature Generator.
