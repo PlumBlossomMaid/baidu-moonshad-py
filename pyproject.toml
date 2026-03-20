@@ -9,7 +9,7 @@ version = "1.0.0"
 description = "Baidu AI Studio / Baidu Login Signature Generator"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "PlumBlossomMaid"},
 ]
