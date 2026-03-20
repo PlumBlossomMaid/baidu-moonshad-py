@@ -1,7 +1,0 @@
-README.md
-pyproject.toml
-baidu_moonshad_py.egg-info/PKG-INFO
-baidu_moonshad_py.egg-info/SOURCES.txt
-baidu_moonshad_py.egg-info/dependency_links.txt
-baidu_moonshad_py.egg-info/requires.txt
-baidu_moonshad_py.egg-info/top_level.txt
