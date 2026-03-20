@@ -19,7 +19,10 @@ Example:
     >>> print(result['shaOne'])
 """
 
-from moonshad import MoonshadSigner, generate_sign_for_login
+try:
+    from .moonshad import MoonshadSigner, generate_sign_for_login
+except ImportError:
+    from moonshad import MoonshadSigner, generate_sign_for_login
 
 __all__ = ["MoonshadSigner", "generate_sign_for_login"]
 __version__ = "1.0.0"
