@@ -436,7 +436,7 @@ def main() -> None:
         for i in range(10):
             test_time = 1700000000 + i * 86400
             key = signer._get_version_key(test_time)
-            print(f"  Time {test_time} (day {test_time//86400}) -> Key: {key}")
+            print(f"  Time {test_time} (day {test_time // 86400}) -> Key: {key}")
 
         result = signer.generate_login_sign(
             gid=test_params["gid"],
@@ -463,7 +463,7 @@ def main() -> None:
             f"&alg={result['alg']}&sig={result['sig']}"
             f"&elapsed={result['elapsed']}&shaOne={result['shaOne']}"
         )
-        print(f"\n[URL Parameter String]")
+        print("\n[URL Parameter String]")
         print(f"  {url_params}")
 
         if result["shaOne"][:2] == "00":
@@ -476,7 +476,7 @@ def main() -> None:
         print("\n[Test Completed]")
 
     except Exception as e:
-        print(f"\n[Test Failed] ✗")
+        print("\n[Test Failed] ✗")
         print(f"  Error: {e}")
         raise
 

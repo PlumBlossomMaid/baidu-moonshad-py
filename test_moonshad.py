@@ -1,14 +1,14 @@
 # MIT License
-# 
+#
 # Copyright (c) 2026 PlumBlossomMaid
-# 
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
 
@@ -20,7 +20,6 @@ from parameterized import parameterized_class
 
 from moonshad import MoonshadSigner
 
-
 # Reference: This test code follows the style of PaddlePaddle legacy tests
 # https://github.com/PaddlePaddle/Paddle/tree/develop/test/legacy_test
 
@@ -28,7 +27,7 @@ from moonshad import MoonshadSigner
 def load_test_data():
     """Load test cases from JSON file."""
     test_file = os.path.join(os.path.dirname(__file__), "test_data.json")
-    with open(test_file, "r", encoding="utf-8") as f:
+    with open(test_file, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -106,7 +105,7 @@ class TestMoonshadSignatureBasic(unittest.TestCase):
         """Test version key selection based on timestamp."""
         # Test known timestamps
         test_cases = [
-            (1700000000, "moonshad5moonsh2"),   # day 19675, index 0
+            (1700000000, "moonshad5moonsh2"),  # day 19675, index 0
             (1700000000 + 86400, "moonshad3moonsh0"),  # day 19676, index 1
             (1700000000 + 86400 * 2, "moonshad8moonsh6"),  # day 19677, index 2
             (1700000000 + 86400 * 3, "moonshad0moonsh1"),  # day 19678, index 3
